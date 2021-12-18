@@ -40,32 +40,27 @@ public class Culebra {
 
             accion = teclado.next().charAt(0);
             switch (accion) {
-                case 'w': break;
-            }
-            if (accion == 'Q') {
-                terminar = true;
-                System.out.println("Game over");
-            }/* else {
-                if (accion == 'W') {
+                case 'w':
                     Tablero[i+1][j]="∞";
                     Tablero[i-1][j]="□";
-                } else {
-                    if (accion == 'A') {
-                        Tablero [i][j-1]="∞";
-                        Tablero [i][j+1]="□";
-                    } else {
-                        if (accion == 'S') {
-                            Tablero[i-1][j]="∞";
-                            Tablero[i+1][j]="□";
-                        } else {
-                            if (accion == 'D') {
-                                Tablero[i][j+1]="∞";
-                                Tablero[i][j-1]="□";
-                            }
-                        }
-                    }
-                }
-            }*///fin if's
+                    break;
+                case 'a':
+                    Tablero [i][j-1]="∞";
+                    Tablero [i][j+1]="□";
+                    break;
+                case 's':
+                    Tablero[i-1][j]="∞";
+                    Tablero[i+1][j]="□";
+                    break;
+                case 'd':
+                    Tablero[i][j+1]="∞";
+                    Tablero[i][j-1]="□";
+                    break;
+                case 'q':
+                    terminar = true;
+                    System.out.println("Game over");
+                    break;
+            }
         }//fin while
 
 
